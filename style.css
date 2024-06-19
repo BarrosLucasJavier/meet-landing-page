@@ -224,6 +224,10 @@ footer::after{
         margin: 0;
         width: 193px;
     }
+    .button.greenButton:hover{
+        cursor: pointer;
+        background-color: #71c0d4;
+    }
     .button{
         margin:auto;
         width: 193px;
@@ -231,6 +235,10 @@ footer::after{
     .button.whatButton{
         margin-bottom:0;
         width: 139px;
+    }
+    .button.whatButton:hover{
+        cursor: pointer;
+        background-color: #b18bdd;
     }
     /* Number */
     .numberContainer{
@@ -259,6 +267,10 @@ footer::after{
     /* Footer */
     footer{
         background-image: url("./assets/tablet/image-footer.jpg");
+    }
+    .footerInfoContainer>button:hover{
+        cursor: pointer;
+        background-color: #b18bdd;
     }
     .footerInfoContainer h2{
         font-size: 40px;

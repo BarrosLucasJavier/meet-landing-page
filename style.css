@@ -23,6 +23,9 @@
     filter: drop-shadow(0 5px 3px rgba(0, 0, 0, 0.3));
 }
 /* HEADER */
+.introContainer .desktopImg{
+    display: none;
+}
 header{
     display: flex;
     flex-direction: column;
@@ -195,7 +198,7 @@ footer::after{
 
 /* ----- MEDIA QUERIES ----- */
 
-@media screen and (min-width:601px) and (max-width:1440px) {
+@media screen and (min-width:601px) {
     /* Header */
     .introContainer>img{
         width: 807px;
@@ -266,5 +269,85 @@ footer::after{
     .footerInfoContainer p{
         max-width: 573px;
         margin: auto;
+    }
+}
+@media screen and (min-width:1440px) {
+    /* Logo */
+    .logo{
+        margin: 5rem 0;
+    }
+    /* Header */
+    .introContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        margin-bottom: 7rem;
+    }
+    .introContainer .desktopImg{
+        display: block;
+    }
+    .introContainer .mobileImg{
+        display: none;
+    }
+    .introContainer>img{ 
+        position: static;
+        left: 0;
+        transform: none;
+        width: 27vw;
+        max-width: 600px;
+        
+    }
+    #left{
+        transform: translateX(-40px);
+    }
+    #right{
+        transform: translateX(40px);
+    }
+    .butttonsContainer {
+        gap: 1rem;
+        margin-bottom:0;
+    }
+    .introTitles{
+        max-width: 540px;
+        margin: auto;
+        
+    }
+    .introTitles h1{
+        font-size: 64px;
+        line-height: 64px;
+        max-width: 445px;
+        margin: auto;
+    }
+    .button{
+        margin: 0;
+    }
+    /* Images */
+    .imagesContainer>img{
+        max-width: 255px;
+    }
+    /* BUILT */
+    .builtContainer{
+        margin: 6rem auto;
+    }
+    .builtContainer p{
+        font-size: 18px;
+        max-width: 540px;
+        margin: auto;
+    }
+    /* Footer */
+    footer{
+        background-image: url("./assets/desktop/image-footer.jpg");
+    }
+    .footerInfoContainer{
+        height: 308px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .footerInfoContainer p{
+        max-width: 350px;
+        margin: auto;
+        text-align: left;
     }
 }
